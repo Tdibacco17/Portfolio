@@ -15,14 +15,13 @@ export default function AboutMeComponent() {
                         <p className={styles["roll"]}>{data.aboutMe.roll}</p>
                     </div>
                     <div>
-                        <Link href={data.aboutMe.cv.pdfSrc ?? ""}
+                        <a href={data.aboutMe.cv.pdfSrc ?? ""}
                             download={"tomasdibacco-cv.pdf"}
                             className={styles['cv']}
-                            locale={false}
-                            aria-label={`Descargar ${data.aboutMe.cv.title}`}
+                            aria-label={`Descargar pdf`}
                             rel="noopener noreferrer" target="_blank">
                             {data.aboutMe.cv.title}
-                        </Link>
+                        </a>
                         <div className={styles['container-networks']}>
                             {
                                 Object.values(data.aboutMe.networks).slice(0, 3).map((iconData: IconInterface) => {
