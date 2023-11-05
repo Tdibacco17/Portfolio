@@ -43,7 +43,7 @@ export default function AboutMeComponent() {
                         priority
                         className={styles['container-inner-image']}
                         quality={100}
-                        sizes='100vw'
+                        sizes='100vw, (max-width: 442px) 90vw'
                         placeholder='blur'
                         blurDataURL={data.aboutMe.image.imgBlur}
                     />
