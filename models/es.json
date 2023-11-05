@@ -4,7 +4,7 @@
         "roll": "Desarrollador Full Stack",
         "cv": {
             "title": "Curriculum vitae",
-            "pdfSrc": "/tomasdibacco-cv.pdf"
+            "pdfSrc": "/assets/pdf/tomasdibacco-cv.pdf"
         },
         "image": {
             "imgSrc": "/assets/img/profile/tomas.webp",
