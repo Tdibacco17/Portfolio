@@ -18,6 +18,7 @@ export default function AboutMeComponent() {
                         <Link href={data.aboutMe.cv.pdfSrc ?? ""}
                             download={"tomasdibacco-cv.pdf"}
                             className={styles['cv']}
+                            locale={false}
                             aria-label={`Descargar ${data.aboutMe.cv.title}`}
                             rel="noopener noreferrer" target="_blank">
                             {data.aboutMe.cv.title}
