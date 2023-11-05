@@ -3,7 +3,6 @@ import styles from './AboutMeComponent.module.scss'
 import data from '@/models/es.json'
 import { IconInterface } from '@/types'
 import IconComponent from '../IconComponent/IconComponent'
-import Link from 'next/link'
 
 export default function AboutMeComponent() {
     return (
@@ -18,7 +17,7 @@ export default function AboutMeComponent() {
                         <a href={data.aboutMe.cv.pdfSrc ?? ""}
                             download={"tomasdibacco-cv.pdf"}
                             className={styles['cv']}
-                            aria-label={`Descargar pdf`}
+                            aria-label={`Descargar ${data.aboutMe.cv.title}`}
                             rel="noopener noreferrer" target="_blank">
                             {data.aboutMe.cv.title}
                         </a>
