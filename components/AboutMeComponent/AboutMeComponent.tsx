@@ -15,7 +15,7 @@ export default function AboutMeComponent() {
                         <p className={styles["roll"]}>{data.aboutMe.roll}</p>
                     </div>
                     <div>
-                        <Link href={data.aboutMe.cv.pdfSrc}
+                        <Link href={data.aboutMe.cv.pdfSrc ?? ""}
                             download={"tomasdibacco-cv.pdf"}
                             className={styles['cv']}
                             aria-label={`Descargar ${data.aboutMe.cv.title}`}
@@ -33,7 +33,7 @@ export default function AboutMeComponent() {
                             }
                             <IconComponent iconData={data.aboutMe.networks.WhatsappDesktop} isDestktop={true} />
                             <IconComponent iconData={data.aboutMe.networks.WhatsappMobile} isMobile={true} />
-                            </div>
+                        </div>
                     </div>
                 </div>
                 <div className={styles['container-outer-image']}>
@@ -44,7 +44,7 @@ export default function AboutMeComponent() {
                         priority
                         className={styles['container-inner-image']}
                         quality={100}
-                        sizes='100vw, (max-width: 992px) 90vw'
+                        sizes='100vw, (max-width: 442px) 90vw'
                         placeholder='blur'
                         blurDataURL={data.aboutMe.image.imgBlur}
                     />
