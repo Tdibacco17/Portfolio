@@ -1,0 +1,21 @@
+{
+    "name": "Tomás Di Bacco",
+    "short_name": "Portfolio",
+    "description": "Portfolio",
+    "icons": [
+        {
+            "src": "/favicon.ico",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#141414",
+    "background_color": "#141414",
+    "author": {
+        "name": "Tomás Di Bacco",
+        "url": "https://www.linkedin.com/in/tomas-di-bacco/"
+    }
+}

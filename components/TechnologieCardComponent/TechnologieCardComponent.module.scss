@@ -1,15 +1,28 @@
 .container-card-technologie {
+    --card-size: 9rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
     padding: 0.4rem;
-    min-width: 7.5rem;
-    max-width: 7.5rem;
-    min-height: 7.5rem;
-    max-height: 7.5rem;
+    min-width: var(--card-size);
+    max-width: var(--card-size);
+    min-height: var(--card-size);
+    max-height: var(--card-size);
     cursor: revert;
+
+    @media (max-width:992px) {
+        --card-size: 7.5rem;
+    }
+
+    @media (max-width:442px) {
+        --card-size: 9rem;
+    }
+
+    @media (max-width:360px) {
+        --card-size: 7.5rem;
+    }
 
     &:hover {
 
@@ -160,12 +173,6 @@
             }
         }
     }
-    @media (max-width:442px) {
-        min-width: 7rem;
-        max-width: 7rem;
-        min-height: 7rem;
-        max-height: 7rem;
-    }
 
     .container-icon-svg {
         display: flex;
@@ -196,6 +203,7 @@
 
     .title-icon {
         font-size: var(--font-12);
+        font-weight: var(--font-bold);
         transition: color 2.2s ease-in-out;
     }
 }

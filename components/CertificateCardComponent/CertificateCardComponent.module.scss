@@ -1,0 +1,33 @@
+.container-outer-image-certificate {
+    --card-size: 9rem;
+
+    min-width: var(--card-size);
+    max-width: var(--card-size);
+    min-height: var(--card-size);
+    max-height: var(--card-size);
+    position: relative;
+
+    @media (max-width:992px) {
+        --card-size: 7.5rem;
+    }
+
+    @media (max-width:442px) {
+        --card-size: 9rem;
+    }
+
+    @media (max-width:360px) {
+        --card-size: 7.5rem;
+    }
+
+    &:hover {
+        .container-inner-image {
+            opacity: 1;
+        }
+    }
+
+    .container-inner-image {
+        object-fit: cover;
+        object-position: 50% 50%;
+        opacity: 0.85;
+    }
+}

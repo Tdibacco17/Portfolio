@@ -30,7 +30,7 @@ export default function ExperienceCardComponent({
                 />
             </div>
             <div className={`${styles["container-card-details"]} ${isView && styles["view-details"]}`}>
-                <div className={styles["container-info"]}>
+                <div className={`${styles["container-info"]} ${isView && styles["active-color"]}`}>
                     <p className={`${styles["subtitle"]}`}>{experienceData.title} {experienceData.position}</p>
                     <p >{experienceData.roll}</p>
                 </div>

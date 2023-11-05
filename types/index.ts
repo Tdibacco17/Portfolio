@@ -36,3 +36,8 @@ export interface RedirectDataInterface {
     title: string,
     link: string
 }
+export interface CertificateDataInterface {
+    certificateId: number,
+    href: string,
+    image: ImgInterface
+}

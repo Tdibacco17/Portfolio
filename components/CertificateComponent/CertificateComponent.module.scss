@@ -1,0 +1,22 @@
+.container-section-certificate {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    font-weight: var(--font-bold);
+    font-size: var(--font-28);
+
+    .container-grid-certificates {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 0.5rem;
+
+        @media (max-width:768px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @media (max-width:442px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
