@@ -1,0 +1,85 @@
+.container-section-aboutme {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    font-weight: var(--font-bold);
+    font-size: var(--font-28);
+
+
+    .wrapper-columns {
+        display: flex;
+        justify-content: space-between;
+        width: 39rem;
+
+        @media (max-width:768px) {
+            flex-direction: column-reverse;
+            gap: 2.5rem;
+            width: 23.5rem;
+        }
+
+        @media (max-width:442px) {
+            width: 14.5rem;
+        }
+
+        .header-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 2.5rem;
+
+            @media (max-width:768px) {
+                text-align: center;
+                align-items: center;
+            }
+
+            .roll {
+                color: var(--text-color);
+            }
+
+            .container-networks {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+
+                @media (max-width:768px) {
+                    justify-items: center;
+                }
+
+                @media (max-width:442px) {
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 1.5rem;
+                }
+            }
+        }
+
+        .container-outer-image {
+            --profile-image: 16rem;
+            position: relative;
+            min-height: var(--profile-image);
+            max-height: var(--profile-image);
+            min-width: var(--profile-image);
+            max-width: var(--profile-image);
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            border-radius: 999px;
+
+            @media (max-width:768px) {
+                --profile-image: 23.5rem;
+                --profile-image: 23.5rem;
+            }
+
+            @media (max-width:442px) {
+                --profile-image: 14.5rem;
+                --profile-image: 14.5rem;
+            }
+
+            * {
+                pointer-events: none;
+            }
+
+            .container-inner-image {
+                object-fit: cover;
+            }
+        }
+    }
+}

@@ -1,0 +1,93 @@
+:root {
+  --font-mono: sans-serif, ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', 'Roboto Mono',
+    'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro', 'Fira Mono', 'Droid Sans Mono',
+    Menlo, Monaco, 'Courier New', monospace;
+
+  --calc-rem: calc(14px + (20.56 - 14) * ((100vw - 280px) / (3840 - 280)));
+
+  --primary-black: rgb(20, 20, 20);
+  --secondary-black: rgb(30, 30, 30);
+
+  --border-color: rgb(48, 48, 48);
+  --hover: rgb(40, 40, 40);
+
+  --primary-white: rgb(237, 237, 237);
+  --secondary-white: rgb(133, 138, 142);
+
+  --border-radius: 10px;
+  --font-14: 14px;
+  --font-12: 12px;
+  --font-28: 28px;
+  --font-regular: 400;
+  --font-bold: 700;
+
+  --transition: 0.2s ease-in-out;
+
+  /* color icons */
+  --react-color: #61DAFB;
+  --redux-color: #764ABC;
+  --nextjs-color: #000000;
+  --bootstrap-color: #7952B3;
+  --html-color: #F37A1D;
+  --css-color: #4F8FD3;
+  --sass-color: #CC6699;
+  --mysql-color: #00758F;
+  --mongodb-color: #47A248;
+  --sequelize-color: #00AEEF;
+  --nodejs-color: #8CC84B;
+  --postgresql-color: #336791;
+  --express-color: #000000;
+  --javascript-color: #F7DF1E;
+  --typescript-color: #007ACC;
+  --gmail-color: #FF0000;
+  --linkedin-color: #0077B5;
+  --whatsapp-color: #075E54;
+  --github-color: #181717;
+  /* color hover text */
+  --text-color: #74ACFB;
+  --link-color: #795cb2;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--primary-black);
+  font-size: var(--calc-rem);
+  font-weight: var(--font-regular);
+  font-family: var(--font-mono);
+  color: var(--primary-white);
+}
+
+body::-webkit-scrollbar {
+  width: 0px;
+  background-color: transparent;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.card {
+  background-color: var(--secondary-black);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.card:hover {
+  background-color: var(--hover);
+}

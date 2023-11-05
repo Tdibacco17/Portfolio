@@ -1,0 +1,153 @@
+.container-card-experience {
+    position: relative;
+    --card-width: 19.5rem;
+    --card-height: 17.5rem;
+    --img-width: 19.5rem;
+    --img-height: 13rem;
+    min-height: var(--card-height);
+    max-height: var(--card-height);
+    min-width: var(--card-width);
+    max-width: var(--card-width);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    text-align: left;
+
+    &:hover {
+        .container-card-details {
+            background-color: var(--hover);
+        }
+    }
+
+    @media (max-width:768px) {
+        --card-width: 23.5rem;
+        --img-width: 23.5rem;
+    }
+
+    @media (max-width:442px) {
+        --card-width: 14.5rem;
+        --img-width: 14.5rem;
+        --card-height: 16.5rem;
+        --img-height: 12rem;
+    }
+
+    .container-outer-image {
+        position: relative;
+        min-height: var(--img-height);
+        max-height: var(--img-height);
+        min-width: var(--img-width);
+        max-width: var(--img-width);
+        overflow: hidden;
+        opacity: 0.85;
+        border-bottom: 1px solid var(--border-color);
+
+        * {
+            pointer-events: none;
+        }
+
+        .container-inner-image {
+            object-fit: cover;
+
+            &.center-center {
+                object-position: center center;
+            }
+
+            &.left-center {
+                object-position: 7.5% 40%;
+            }
+
+            &.right-center {
+                object-position: 87.5% 10%;
+            }
+        }
+    }
+
+    .container-card-details {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        bottom: -13rem;
+        left: 0;
+        transition: bottom 0.65s ease-in-out;
+        background-color: var(--secondary-black);
+
+        &.view-details {
+            bottom: 0;
+            transition: bottom 0.5s ease-in-out;
+        }
+
+        @media (max-width:442px) {
+            bottom: -12rem;
+        }
+
+        .container-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0.5rem;
+            gap: 0.5rem;
+            height: 4.5rem;
+            font-weight: var(--font-bold);
+            font-size: var(--font-14);
+
+            .subtitle {
+                font-size: var(--font-12);
+                color: var(--secondary-white);
+            }
+        }
+
+        .continar-details {
+            border-top: 1px solid var(--border-color);
+            padding: 1.5rem 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 2.5rem;
+            height: 13rem;
+            font-size: var(--font-14);
+
+            @media (max-width:442px) {
+                height: 12rem;
+            }
+
+            .title-tech {
+                font-size: var(--font-12);
+                padding-bottom: 0.75rem;
+                color: var(--secondary-white);
+                text-transform: uppercase;
+                text-align: left;
+            }
+
+            .technologies {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 0.5rem;
+                color: var(--text-color)
+            }
+
+            .container-redirects {
+                display: flex;
+                justify-content: flex-start;
+                gap: 1rem;
+
+                .web-link {
+                    text-decoration: underline;
+                    font-size: var(--font-12);
+
+                    &:hover {
+                        color: var(--link-color);
+                    }
+                }
+            }
+
+            .date {
+                padding-top: 0.75rem;
+                width: 100%;
+                text-align: left;
+                font-size: var(--font-12);
+                color: var(--secondary-white);
+            }
+        }
+    }
+}

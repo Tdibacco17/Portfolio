@@ -1,0 +1,28 @@
+.container-section-experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 5rem;
+
+    .container-table-experiences {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        font-weight: var(--font-bold);
+        font-size: var(--font-28);
+
+        .container-grid-experiences {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.5rem;
+
+            @media (max-width:768px) {
+                grid-template-columns: repeat(1, 1fr);
+                row-gap: 1.5rem;
+            }
+        }
+    }
+}

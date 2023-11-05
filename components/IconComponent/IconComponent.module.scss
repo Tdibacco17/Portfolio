@@ -1,0 +1,47 @@
+.container-card-technologie {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.4rem;
+    min-width: 4rem;
+    max-width: 4rem;
+    min-height: 4rem;
+    max-height: 4rem;
+    cursor: pointer;
+
+    &.isDestktop {
+        @media (max-width:442px) {
+            display: none;
+        }
+    }
+
+    &.isMobile {
+        display: none;
+
+        @media (max-width:442px) {
+            display: flex;
+        }
+    }
+
+    .container-icon-svg {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-width: 2rem;
+        max-width: 2rem;
+        min-height: 2rem;
+        max-height: 2rem;
+
+        @media (max-width:992px) {
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+
+        .icon-svg {
+            fill: var(--primary-white);
+        }
+    }
+}

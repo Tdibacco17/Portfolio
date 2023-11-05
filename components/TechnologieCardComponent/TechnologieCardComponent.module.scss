@@ -1,0 +1,201 @@
+.container-card-technologie {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem;
+    min-width: 7.5rem;
+    max-width: 7.5rem;
+    min-height: 7.5rem;
+    max-height: 7.5rem;
+    cursor: revert;
+
+    &:hover {
+
+        .container-icon-svg .icon-svg-isTechnologie {
+            transition: fill 0s ease-in-out, color 0s ease-in-out;
+
+            &.react {
+                fill: var(--react-color);
+                color: var(--react-color);
+            }
+
+            &.redux {
+                fill: var(--redux-color);
+                color: var(--redux-color);
+            }
+
+            &.nextjs {
+                fill: var(--nextjs-color);
+                color: var(--nextjs-color);
+            }
+
+            &.bootstrap {
+                fill: var(--bootstrap-color);
+                color: var(--bootstrap-color);
+            }
+
+            &.html {
+                fill: var(--html-color);
+                color: var(--html-color);
+            }
+
+            &.css {
+                fill: var(--css-color);
+                color: var(--css-color);
+            }
+
+            &.sass {
+                fill: var(--sass-color);
+                color: var(--sass-color);
+            }
+
+            &.mysql {
+                fill: var(--mysql-color);
+                color: var(--mysql-color);
+            }
+
+            &.mongodb {
+                fill: var(--mongodb-color);
+                color: var(--mongodb-color);
+            }
+
+            &.sequelize {
+                fill: var(--sequelize-color);
+                color: var(--sequelize-color);
+            }
+
+            &.nodejs {
+                fill: var(--nodejs-color);
+                color: var(--nodejs-color);
+            }
+
+            &.postgresql {
+                fill: var(--postgresql-color);
+                color: var(--postgresql-color);
+            }
+
+            &.express {
+                fill: var(--express-color);
+                color: var(--express-color);
+            }
+
+            &.javascript {
+                fill: var(--javascript-color);
+                color: var(--javascript-color);
+            }
+
+            &.typescript {
+                fill: var(--typescript-color);
+                color: var(--typescript-color);
+            }
+        }
+
+        .title-icon {
+            transition: color 0s ease-in-out;
+
+            &.react {
+                color: var(--react-color);
+            }
+
+            &.redux {
+                color: var(--redux-color);
+            }
+
+            &.nextjs {
+                color: var(--nextjs-color);
+            }
+
+            &.bootstrap {
+                color: var(--bootstrap-color);
+            }
+
+            &.bootstrap {
+                color: var(--bootstrap-color);
+            }
+
+            &.html {
+                color: var(--html-color);
+            }
+
+            &.css {
+                color: var(--css-color);
+            }
+
+            &.sass {
+                color: var(--sass-color);
+            }
+
+            &.mysql {
+                color: var(--mysql-color);
+            }
+
+            &.mongodb {
+                color: var(--mongodb-color);
+            }
+
+            &.sequelize {
+                color: var(--sequelize-color);
+            }
+
+            &.nodejs {
+                color: var(--nodejs-color);
+            }
+
+            &.postgresql {
+                color: var(--postgresql-color);
+            }
+
+            &.express {
+                color: var(--express-color);
+            }
+
+            &.javascript {
+                color: var(--javascript-color);
+            }
+
+            &.typescript {
+                color: var(--typescript-color);
+            }
+        }
+    }
+    @media (max-width:442px) {
+        min-width: 7rem;
+        max-width: 7rem;
+        min-height: 7rem;
+        max-height: 7rem;
+    }
+
+    .container-icon-svg {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-width: 3.625rem;
+        max-width: 3.625rem;
+        min-height: 3.625rem;
+        max-height: 3.625rem;
+
+        @media (max-width:992px) {
+            width: 3.125rem;
+            height: 3.125rem;
+        }
+
+        .icon-svg-isTechnologie {
+            transition: fill 2.2s ease-in-out, color 2.2s ease-in-out;
+            fill: var(--primary-white);
+            color: var(--primary-white);
+
+            &:hover {
+                fill: var(--secondary-white);
+                color: var(--secondary-white);
+            }
+        }
+    }
+
+    .title-icon {
+        font-size: var(--font-12);
+        transition: color 2.2s ease-in-out;
+    }
+}
