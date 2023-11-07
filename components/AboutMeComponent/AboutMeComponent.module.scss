@@ -42,6 +42,13 @@
 
             .roll {
                 color: var(--text-color);
+                display: flex;
+                gap: 0.5rem;
+
+                @media (max-width:768px) {
+                    flex-direction: column;
+                    gap: revert;
+                }
             }
 
             .cv {

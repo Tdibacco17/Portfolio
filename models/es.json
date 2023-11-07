@@ -1,7 +1,10 @@
 {
     "aboutMe": {
         "name": "Tomás Di Bacco",
-        "roll": "Desarrollador Full Stack",
+        "roll": [
+            "Desarrollador ",
+            "Full Stack"
+        ],
         "cv": {
             "title": "Curriculum vitae",
             "pdfSrc": "/assets/pdf/tomasdibacco-cv.pdf"

@@ -11,7 +11,13 @@ export default function AboutMeComponent() {
                 <div className={styles["header-info"]}>
                     <div>
                         <p>{data.aboutMe.name}</p>
-                        <p className={styles["roll"]}>{data.aboutMe.roll}</p>
+                        <div className={styles["roll"]}>
+                            {
+                                data.aboutMe.roll.map((item: string, index: number) => {
+                                    return <p key={index}>{item}</p>
+                                })
+                            }
+                        </div>
                     </div>
                     <div>
                         <a href={data.aboutMe.cv.pdfSrc ?? ""}
