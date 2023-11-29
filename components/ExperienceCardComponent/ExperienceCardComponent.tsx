@@ -23,8 +23,8 @@ export default function ExperienceCardComponent({
                     alt={experienceData.image.imgAlt}
                     fill
                     className={`${styles['container-inner-image']} ${styles[`${experienceData.image.imgPosition}`]}`}
-                    quality={100}
                     sizes='100vw, (max-width: 992px) 90vw'
+                    quality={50}
                     placeholder='blur'
                     blurDataURL={experienceData.image.imgBlur}
                 />
