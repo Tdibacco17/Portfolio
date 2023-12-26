@@ -240,11 +240,6 @@
                             "linkId": 1,
                             "title": "GitHub",
                             "link": "https://github.com/Tdibacco17/HENRY-ProyectoIndividual"
-                        },
-                        "web": {
-                            "linkId": 2,
-                            "title": "Sitio web",
-                            "link": "https://app-dogs-tomas-di-bacco.vercel.app/"
                         }
                     }
                 },
@@ -305,11 +300,6 @@
                             "linkId": 1,
                             "title": "GitHub",
                             "link": "https://github.com/Tdibacco17/App-RickYMorty"
-                        },
-                        "web": {
-                            "linkId": 2,
-                            "title": "Sitio web",
-                            "link": "https://rick-y-morty-tomas-di-bacco.vercel.app/"
                         }
                     }
                 }
