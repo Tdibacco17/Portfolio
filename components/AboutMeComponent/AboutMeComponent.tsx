@@ -21,7 +21,7 @@ export default function AboutMeComponent() {
                     </div>
                     <div>
                         <a href={data.aboutMe.cv.pdfSrc ?? ""}
-                            download={"TomasDiBaccoCV.pdf"}
+                            download={"TomasDiBacco_CV.pdf"}
                             className={styles['cv']}
                             aria-label={`Descargar ${data.aboutMe.cv.title}`}
                             rel="noopener noreferrer" target="_blank">
