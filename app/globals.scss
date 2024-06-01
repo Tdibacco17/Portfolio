@@ -158,9 +158,8 @@ li::marker {
 }
 
 .divider {
-  background-color: var(--secondary-black);
-  border-bottom: 1px;
-  opacity: 0.25;
+  border-bottom: 1px solid var(--secondary-black);
+  opacity: 0.4;
   margin: 1.25em 0;
 }
 

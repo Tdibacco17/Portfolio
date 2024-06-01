@@ -6,6 +6,10 @@
     gap: 0.625rem;
     padding: 1.5rem;
 
+    @media (max-width:520px) {
+        padding: 1.75rem;
+    }
+
     &.link-icon {
         padding: .625rem;
         width: revert;
