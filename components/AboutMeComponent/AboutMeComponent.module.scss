@@ -14,7 +14,6 @@
         @media (max-width:520px) {
             flex-direction: column-reverse;
             align-items: center;
-
         }
 
         .info-container {
@@ -34,6 +33,12 @@
                 display: flex;
                 gap: 1rem;
                 padding-top: 1.5rem;
+
+                @media (max-width:520px) {
+                    gap: 1.25rem;
+                    padding-top: 2.5rem;
+                    justify-content: center;
+                }
             }
         }
     }

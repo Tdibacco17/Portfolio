@@ -7,13 +7,17 @@
     padding: 1.5rem;
 
     &.link-icon {
-        padding: .65rem;
+        padding: .625rem;
         width: revert;
         cursor: pointer;
+
+        @media (max-width:520px) {
+            padding: 1rem;
+        }
     }
 
     .container-icon-svg {
-        --size-icon: 2.5rem;
+        --size-icon: 2.25rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -24,7 +28,7 @@
         max-height: var(--size-icon);
 
         &.link-icon {
-            --size-icon: 1.5rem;
+            --size-icon: 1.75rem;
         }
     }
 
@@ -35,7 +39,7 @@
 
     .text-icon {
         transition: color 2.2s ease-in-out;
-        font-size: 0.875rem;
+        font-size: 0.75rem;
         color: var(--secondary-white);
         font-weight: 500;
         letter-spacing: -0.05px;
