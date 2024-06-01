@@ -5,7 +5,7 @@ import { GeistSans } from 'geist/font/sans';
 export const metadata: Metadata = {
   title: "Tomás Di Bacco",
   description: "Portfolio",
-  manifest: "/public/manifest.json"
+  manifest: "/manifest.json"
 };
 
 export const viewport: Viewport = {
