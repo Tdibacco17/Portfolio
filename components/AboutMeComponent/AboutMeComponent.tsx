@@ -11,7 +11,7 @@ export default function AboutMeComponent() {
                 <div className={styles["info-container"]}>
                     <div>
                         <h1 className="name">Tomás Di Bacco</h1>
-                        <h4 className="name color">Desarrollador <span className="noWrap">Full Stack</span></h4>
+                        <h2 className="name color">Desarrollador <span className="noWrap">Full Stack</span></h2>
                     </div>
                     <div>
                         <a href={data.about.cv.pdfSrc ?? ""}
