@@ -1,0 +1,13 @@
+.studies-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25em;
+    width: 100%;
+
+    .job {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25em;
+        width: 100%;
+    }
+}

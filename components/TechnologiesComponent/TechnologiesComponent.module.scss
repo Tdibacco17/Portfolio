@@ -1,0 +1,10 @@
+.technologies-container {
+    max-width: 100%;
+
+    .grid-icons {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
+        max-width: 100%;
+        gap: .625rem;
+    }
+}

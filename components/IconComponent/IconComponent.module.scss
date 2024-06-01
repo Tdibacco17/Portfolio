@@ -1,0 +1,190 @@
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    padding: 1.5rem;
+
+    &.link-icon {
+        padding: .65rem;
+        width: revert;
+        cursor: pointer;
+    }
+
+    .container-icon-svg {
+        --size-icon: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-width: var(--size-icon);
+        max-width: var(--size-icon);
+        min-height: var(--size-icon);
+        max-height: var(--size-icon);
+
+        &.link-icon {
+            --size-icon: 1.5rem;
+        }
+    }
+
+    .icon-svg {
+        transition: fill 2.2s ease-in-out;
+        fill: var(--primary-white);
+    }
+
+    .text-icon {
+        transition: color 2.2s ease-in-out;
+        font-size: 0.875rem;
+        color: var(--secondary-white);
+        font-weight: 500;
+        letter-spacing: -0.05px;
+        text-transform: uppercase;
+    }
+
+    &:hover {
+        .container-icon-svg .icon-svg {
+            transition: fill 0s ease-in-out;
+
+            &.fill-react {
+                fill: var(--react-color);
+            }
+
+            &.fill-redux {
+                fill: var(--redux-color);
+            }
+
+            &.fill-nextjs {
+                fill: var(--nextjs-color);
+            }
+
+            &.fill-bootstrap {
+                fill: var(--bootstrap-color);
+            }
+
+            &.fill-bootstrap {
+                fill: var(--bootstrap-color);
+            }
+
+            &.fill-html {
+                fill: var(--html-color);
+            }
+
+            &.fill-tailwind {
+                fill: var(--typescript-color);
+            }
+
+            &.fill-css {
+                fill: var(--css-color);
+            }
+
+            &.fill-sass {
+                fill: var(--sass-color);
+            }
+
+            &.fill-mysql {
+                fill: var(--mysql-color);
+            }
+
+            &.fill-mongodb {
+                fill: var(--mongodb-color);
+            }
+
+            &.fill-sequelize {
+                fill: var(--sequelize-color);
+            }
+
+            &.fill-nodejs {
+                fill: var(--nodejs-color);
+            }
+
+            &.fill-postgresql {
+                fill: var(--postgresql-color);
+            }
+
+            &.fill-express {
+                fill: var(--express-color);
+            }
+
+            &.fill-javascript {
+                fill: var(--javascript-color);
+            }
+
+            &.fill-typescript {
+                fill: var(--typescript-color);
+            }
+        }
+
+        .text-icon {
+            transition: color 0s ease-in-out;
+
+            &.color-react {
+                color: var(--react-color);
+            }
+
+            &.color-redux {
+                color: var(--redux-color);
+            }
+
+            &.color-nextjs {
+                color: var(--nextjs-color);
+            }
+
+            &.color-bootstrap {
+                color: var(--bootstrap-color);
+            }
+
+            &.color-bootstrap {
+                color: var(--bootstrap-color);
+            }
+
+            &.color-html {
+                color: var(--html-color);
+            }
+
+            &.color-css {
+                color: var(--css-color);
+            }
+
+            &.color-sass {
+                color: var(--sass-color);
+            }
+
+            &.color-tailwind {
+                color: var(--typescript-color);
+            }
+
+            &.color-mysql {
+                color: var(--mysql-color);
+            }
+
+            &.color-mongodb {
+                color: var(--mongodb-color);
+            }
+
+            &.color-sequelize {
+                color: var(--sequelize-color);
+            }
+
+            &.color-nodejs {
+                color: var(--nodejs-color);
+            }
+
+            &.color-postgresql {
+                color: var(--postgresql-color);
+            }
+
+            &.color-express {
+                color: var(--express-color);
+            }
+
+            &.color-javascript {
+                color: var(--javascript-color);
+            }
+
+            &.color-typescript {
+                color: var(--typescript-color);
+            }
+        }
+    }
+}
