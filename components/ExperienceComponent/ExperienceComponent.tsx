@@ -26,16 +26,13 @@ export default function ExperienceComponent() {
                 <div className={`${styles["job"]} text`}>
                     <div>
                         <p className="title">Strongwood</p>
-                        <p className="subtitle">Desarrollador Front End, 2023 — 2024</p>
+                        <p className="subtitle">Desarrollador Front End, abr. 2023 — sep. 2024</p>
                     </div>
                     <p>
                         <Link target="_blank" rel="noopener noreferrer" href={"https://www.instagram.com/strongwood_ar/"} aria-label={"https://www.instagram.com/strongwood_ar/"} className="link">Strongwood</Link> es una empresa dedicada a la fabricación y venta de muebles. Querían construir un portfolio de sus proyectos realizados para dar más credibilidad a la marca.
                     </p>
                     <p>
-                        En 2023, desarrollé el <Link target="_blank" rel="noopener noreferrer" href={"https://www.strongwood.com.ar/"} aria-label={"https://www.strongwood.com.ar/"} className="link">sitio web</Link> utilizando Next.js, React.js, TypeScript y Sass. Me encargué de cada aspecto de la página, desde el diseño hasta la experiencia de usuario. Realicé reuniones con el cliente para llevar a cabo el desarrollo y mostrar avances, asegurando cumplir con sus expectativas y funcionalidades.
-                    </p>
-                    <p>
-                        En 2024, desarrollé un software especializado para la cotización de muebles y el despiece de materiales, mejorando la gestión y reduciendo los tiempos de trabajo. El sistema emplea Excel como base de datos para el manejo dinámico de los datos y precios.
+                        Desarrollé el <Link target="_blank" rel="noopener noreferrer" href={"https://www.strongwood.com.ar/"} aria-label={"https://www.strongwood.com.ar/"} className="link">sitio web</Link> utilizando Next.js, React.js, TypeScript y Sass. Me encargué de cada aspecto de la página, desde el diseño hasta la experiencia de usuario. Realicé reuniones con el cliente para llevar a cabo el desarrollo y mostrar avances, asegurando cumplir con sus expectativas y funcionalidades.
                     </p>
                 </div>
             </div>
